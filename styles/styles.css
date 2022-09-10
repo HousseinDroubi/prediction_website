@@ -1,18 +1,18 @@
 /* CSS Reset */
 
-* {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: sans-serif;
     }
   
-img {
+    img {
         height: 100%;
     }
 
-  /* Nav bar */
-  .nav-bar{
+    /* Nav bar */
+    .nav-bar{
         display: flex;
         height: 5vw;
         text-align: center;
@@ -20,15 +20,14 @@ img {
         align-items: center;
         justify-content: center;
     }
-.nav-text{
+    .nav-text{
         font-size: 2.5vw;
         font-weight: bolder;
         text-decoration: underline; 
     }
-  /* Hero paragraph */
-    /*Hero*/
+    /* Hero */
 
-.hero {
+    .hero {
         background: url("../images/GettyImages-1216520737-scaled.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -37,7 +36,7 @@ img {
         position: relative;
         width: 100%;
     }
-  .hero-containers{
+    .hero-containers{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -45,6 +44,7 @@ img {
         align-items: center;
 
     }
+    /* dog-image */
     .dog-div{
         margin-top: 3vw;
     }
@@ -61,4 +61,38 @@ img {
         border-color: white;
         height: 20vw;
         width: 40vw;    
+    }
+    /* Predict Data */
+    .predict-data{
+        display: flex   ;
+        margin-top: 2vw;
+        width: 40vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .name{
+        border-style: solid;
+        border-radius: 5px;
+        background-color: #040636;
+        border-color: white;
+        width: 10vw;
+        height: 3vw;
+        color: white;
+        font-size: 1vw;
+    }
+    .name::placeholder {
+        font-size: 1vw;
+    }
+    
+    .btn{
+        margin-left: 50px;
+        background-color: white;
+        width: 10vw;
+        height: 3vw;
+        color: #040636;
+        font-size:2vw;
+    }
+    /* Utilizes */
+    .pointer{
+        cursor: pointer;
     }
