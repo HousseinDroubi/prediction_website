@@ -1,12 +1,10 @@
 /* CSS Reset */
-
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: sans-serif;
     }
-  
     img {
         height: 100%;
         width: 100%;
@@ -29,8 +27,8 @@
         font-weight: bolder;
         text-decoration: underline; 
     }
-    /* Hero */
 
+    /* Hero */
     .hero {
         background: url("../images/GettyImages-1216520737-scaled.jpg");
         background-size: cover;
@@ -46,7 +44,6 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-
     }
     /* dog-image */
     .dog-div{
@@ -67,8 +64,8 @@
         width: 40vw;    
     }
 
-    /* Predict Data */
-    .predict-data{
+    /* Predict name */
+    .predict-name{
         display: flex   ;
         margin-top: 2vw;
         width: 40vw;
@@ -131,4 +128,3 @@
     .wrong-input::placeholder{
         color: red;
     }
-    
