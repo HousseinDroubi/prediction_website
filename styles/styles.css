@@ -92,7 +92,6 @@
      
     /* Fetch data */
     .fetch-data{
-        margin-top: 2vw;
         width: 40vw;
         background-color: #040636;
         border-style: solid;
@@ -117,6 +116,12 @@
         text-decoration: underline;
         font-size: 1.5vw;
         font-family: "Times New Roman", Times, serif;
+    }
+    .fetch-data-title{
+        margin-top: 2vw;
+        font-size: 2vw;
+        font-family: "Times New Roman", Times, serif;
+        text-decoration: underline;
     }
 
     /* Utilizes */
