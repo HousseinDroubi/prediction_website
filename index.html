@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts.js" type="text/javascript"></script>
     <title>Predict info</title>
 
 </head>
@@ -23,34 +22,31 @@
         <section class="hero-containers">
             <div class="dog-div">
                 <p class="dog-image-title">Random dog image</p>
-                <div class="dog-image"></div>
+                <div class="dog-image" id="dog_image"></div>
             </div>
             <!-- End dog division -->
 
             <!-- Start get data -->
             <div class="predict-data">
                 <div>
-                    <input type="text" placeholder="Enter your name..." class="name">
+                    <input type="text" placeholder="Enter your name..." class="name" id="input_name">
                 </div>
                 <div>
-                    <input type="submit" value="Predict" class="name pointer">
+                    <input type="submit" value="Predict" class="name pointer" id="btn_fetch">
                 </div>
             </div>
             <!-- End get data -->
 
             <!-- Start fetch data -->
            <div class="fetch-data">
-            <div class="dir-column">
+            <div class="dir-column" id="fetch_gender">
                 <div>Gender</div>
-                <div>NA</div>
             </div>
-            <div class="dir-column">
+            <div class="dir-column" id="fetch_age">
                 <div>Age</div>
-                <div>NA</div>
             </div>
-            <div class="dir-column">
+            <div class="dir-column" id="fetch_nationality">
                 <div>Nationality</div>
-                <div>NA</div>
             </div>
            </div>
             <!-- End fetch data -->
@@ -58,5 +54,6 @@
         <!-- End hero containers -->
     </div>
     <!-- End Hero -->
+    <script src="scripts.js" type="text/javascript"></script>
 </body>
 </html>

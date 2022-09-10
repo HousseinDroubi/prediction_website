@@ -119,4 +119,7 @@
     .pointer{
         cursor: pointer;
     }
+    .wrong-input::placeholder{
+        color: red;
+    }
     
