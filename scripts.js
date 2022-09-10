@@ -6,7 +6,7 @@ const fetch_age=document.getElementById("fetch_age");
 const fetch_nationality=document.getElementById("fetch_nationality");
 const input_name=document.getElementById("input_name");
 const fetch_name=document.getElementById("fetch_name");
-// after addditionssssssss
+
 // Get the json request from url and fill image
 fetch('https://dog.ceo/api/breeds/image/random')
 .then((response) => response.json())
@@ -41,7 +41,6 @@ let catchError = (e)=>{
                 fetched_gender='-'
             div_gender.innerText=fetched_gender;
             fetch_gender.appendChild(div_gender);
-            console.log(fetched_gender);
         })
               
         // Fetch gender
@@ -78,7 +77,6 @@ let catchError = (e)=>{
                 }
             }
             const div_nationality= document.createElement('div');
-            console.log("nationalities are: "+nationalities)
             if(nationalities=='')
                 nationalities='-';
             div_nationality.innerText=nationalities;
