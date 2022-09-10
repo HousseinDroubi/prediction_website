@@ -1,3 +1,39 @@
-body{
-    background-color: red;
-}
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+img {
+    height: 100%;
+  }
+
+  /* Nav bar */
+  .nav-bar{
+    display: flex;
+    height: 5vw;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-text{
+    font-size: 2.5vw;
+    font-weight: bolder;
+    text-decoration: underline; 
+  }
+  /* Hero paragraph */
+    /*Hero*/
+
+    .hero {
+        background: url("../images/GettyImages-1216520737-scaled.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #fff;
+        position: relative;
+        width: 100%;
+      }
