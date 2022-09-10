@@ -6,7 +6,7 @@ const fetch_age=document.getElementById("fetch_age");
 const fetch_nationality=document.getElementById("fetch_nationality");
 const input_name=document.getElementById("input_name");
 const fetch_name=document.getElementById("fetch_name");
-
+// after addditionssssssss
 // Get the json request from url and fill image
 fetch('https://dog.ceo/api/breeds/image/random')
 .then((response) => response.json())
@@ -37,9 +37,13 @@ let catchError = (e)=>{
             .then((data) => {
             let fetched_gender=Object.values(data)[1];
             const div_gender = document.createElement('div');
+            if(fetched_gender==null)
+                fetched_gender='-'
             div_gender.innerText=fetched_gender;
-            fetch_gender.appendChild(div_gender);})
-
+            fetch_gender.appendChild(div_gender);
+            console.log(fetched_gender);
+        })
+              
         // Fetch gender
         let age_url='https://api.agify.io/?name=';
         age_url=age_url.concat(input_name.value)
@@ -48,6 +52,8 @@ let catchError = (e)=>{
             .then((data) => {
             let fetched_age=Object.values(data)[1];
             const div_age = document.createElement('div');
+            if(fetched_age==null)
+                fetched_age='-'
             div_age.innerText=fetched_age;
             fetch_age.appendChild(div_age);})
 
@@ -72,6 +78,9 @@ let catchError = (e)=>{
                 }
             }
             const div_nationality= document.createElement('div');
+            console.log("nationalities are: "+nationalities)
+            if(nationalities=='')
+                nationalities='-';
             div_nationality.innerText=nationalities;
             fetch_nationality.appendChild(div_nationality);
             // Copying the name entered by user to the other fetched data
