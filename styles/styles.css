@@ -57,11 +57,12 @@
     .dog-image{
         margin-top: 2px;
         border: solid;
-        border-radius: 5px;
+        border-radius: 0.5vw;
         border-color: white;
         height: 20vw;
         width: 40vw;    
     }
+
     /* Predict Data */
     .predict-data{
         display: flex   ;
@@ -72,7 +73,7 @@
     }
     .name{
         border-style: solid;
-        border-radius: 5px;
+        border-radius: 0.1vw;
         background-color: #040636;
         border-color: white;
         width: 10vw;
@@ -81,18 +82,41 @@
         font-size: 1vw;
     }
     .name::placeholder {
+        padding-left: 1%;
         font-size: 1vw;
     }
-    
-    .btn{
-        margin-left: 50px;
-        background-color: white;
-        width: 10vw;
-        height: 3vw;
-        color: #040636;
-        font-size:2vw;
+     
+    /* Fetch data */
+    .fetch-data{
+        margin-top: 2vw;
+        width: 40vw;
+        background-color: #040636;
+        border-style: solid;
+        border-color: white;
+        border-radius: 1.5vw;
+        padding: 1vw 2vw 1vw 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 4vw;
     }
+    .dir-column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1vw;
+    }
+    .dir-column>div{
+        margin-top: 1vw;
+    }
+    .dir-column>div:first-child{
+        text-decoration: underline;
+        font-size: 1.5vw;
+        font-family: "Times New Roman", Times, serif;
+    }
+
     /* Utilizes */
     .pointer{
         cursor: pointer;
     }
+    
