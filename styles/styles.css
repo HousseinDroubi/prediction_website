@@ -1,34 +1,34 @@
 /* CSS Reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
   
 img {
-    height: 100%;
-  }
+        height: 100%;
+    }
 
   /* Nav bar */
   .nav-bar{
-    display: flex;
-    height: 5vw;
-    text-align: center;
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav-text{
-    font-size: 2.5vw;
-    font-weight: bolder;
-    text-decoration: underline; 
-  }
+        display: flex;
+        height: 5vw;
+        text-align: center;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+.nav-text{
+        font-size: 2.5vw;
+        font-weight: bolder;
+        text-decoration: underline; 
+    }
   /* Hero paragraph */
     /*Hero*/
 
-    .hero {
+.hero {
         background: url("../images/GettyImages-1216520737-scaled.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -36,4 +36,29 @@ img {
         color: #fff;
         position: relative;
         width: 100%;
-      }
+    }
+  .hero-containers{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .dog-div{
+        margin-top: 3vw;
+    }
+    .dog-image-title{
+        font-size: 1.5vw;
+        margin-left: 1vw;
+        text-decoration: underline; 
+        font-family: "Times New Roman", Times, serif;
+    }
+    .dog-image{
+        margin-top: 2px;
+        border: solid;
+        border-radius: 5px;
+        border-color: white;
+        height: 20vw;
+        width: 40vw;    
+    }
