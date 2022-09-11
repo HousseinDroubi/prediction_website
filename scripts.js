@@ -90,5 +90,5 @@ let catchError = (e)=>{
 }
 // Catch first of all if user didn't enter a name. Hence, error will exist inside input text
 btn_fetch.addEventListener('click',catchError);
-// In case the error mentioned at line 86 exist, so, the input text will return to inital stage
+// In case the error mentioned at line 91 exist, so, the input text will return to inital stage
 input_name.addEventListener('click',removeError);
